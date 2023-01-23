@@ -11,24 +11,10 @@ function func() {
 
 func()
 
-// 
-for (var i = 0; i < 10; i++) {
-  setTimeout(() => {
-    console.log(i)
-  })
-}
-
-// 
-for (var i = 0; i < 10; i++) {
-  
-}
-console.log(i) // 10
-
-
-// 
+// 块级作用域
 ;(function() {
+  console.log(b)
   if (a) {
-    console.log(b)
     var b = 3
   }
 })();
