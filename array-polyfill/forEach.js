@@ -6,12 +6,12 @@ function forEach(arr, callback) {
 
 const arr = [1, 2, 3, 4, 5]
 
-arr.forEach((o, index, arr) => {
+arr.forEach((o, index) => {
   console.log(`${o} - ${index}`)
 })
 
 console.log('======== polyfill ==========')
 
-forEach(arr, (o, index, arr) => {
+forEach(arr, (o, index) => {
   console.log(`${o} - ${index}`)
 })
