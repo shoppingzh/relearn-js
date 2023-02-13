@@ -9,12 +9,12 @@ function func() {
   var b = 2
 }
 
-func()
+func();
 
 // 块级作用域
-;(function() {
+(function() {
   console.log(b)
   if (a) {
     var b = 3
   }
-})();
+})()

@@ -16,4 +16,3 @@ p[Symbol('gender')] = 'male'
 Object.getOwnPropertySymbols(p).forEach(symbol => {
   console.log(symbol) // Symbol(gender)
 })
-

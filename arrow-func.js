@@ -15,6 +15,3 @@ const func2 = () => {
 }
 
 func2()
-
-
-

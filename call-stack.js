@@ -14,10 +14,10 @@ function bar() {
   }
   const b2 = 1
   if (b) {
-    var b3 = 2
-    ;(function() {
+    var b3 = 2;
+    (function() {
       var b4 = 3
-    })();
+    })()
     {
       var b5 = 4
     }
