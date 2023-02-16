@@ -18,3 +18,16 @@ const o2 = new Array()
 console.log(o2 instanceof Array)
 Object.setPrototypeOf(o2, Object.prototype)
 console.log(o2 instanceof Array)
+
+// ES6 Array.isArray深入
+
+console.log('=========== ES6 Array.isArray深入 ==============')
+
+const p = {}
+Object.defineProperty(p, 'length', {
+  configurable: false,
+  value: 0
+})
+p[0] = 1
+p.length = 1
+console.log(Array.isArray(p))
