@@ -6,9 +6,7 @@ function run(generator, ...args) {
       if (done) return resolve(value)
 
       // 注意，这里要返回一个新Promise
-      return Promise.resolve(value).then(result => {
-        return next(result)
-      }).catch(err => {
+      return Promise.resolve(value).then(next).catch(err => {
         reject(err)
       })
     }
